@@ -1,7 +1,5 @@
 //
-//
-//  <<<<<<<<<<<<< -- Process-2 -- >>>>>>>>>>>>>
-//
+//  <<<<<<<<<<<<< -- Process-1 -- >>>>>>>>>>>>>
 //
 #include <bits/stdc++.h>
 using namespace std;
@@ -26,10 +24,9 @@ int main()
 }
 
 //
-//
 //  <<<<<<<<<<<<< -- Process-2 -- >>>>>>>>>>>>>
 //
-//
+
 #include <iostream>
 #include <cstring>
 using namespace std;
