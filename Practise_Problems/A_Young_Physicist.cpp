@@ -5,15 +5,18 @@ using namespace std;
 
 int main()
 {
+
     int t;
     cin >> t;
-    int sum = 0;
+    int x = 0, y = 0, z = 0;
     int a, b, c;
 
     while (t--)
     {
         cin >> a >> b >> c;
-        sum += a + b + c;
+        x += a;
+        y += b;
+        z += c;
     }
-    (sum == 0) ? cout << "YES" : cout << "NO";
+    (x == 0 && y == 0 && z == 0) ? cout << "YES" : cout << "NO";
 }
