@@ -16,8 +16,8 @@ int main()
         else if (s[i] == 'A')
             cntA++;
     }
-    (cntA == cntD) ? cout << "Friendship" : ((s[i] == 'A') && (cntA != cntD)) ? cout << "Anton"
-                                                                              : cout << "Danik";
+    (cntA == cntD) ? cout << "Friendship" : (cntA > cntD) ? cout << "Anton"
+                                                          : cout << "Danik";
 
     return 0;
 }
