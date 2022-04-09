@@ -2,6 +2,8 @@
 using namespace std;
 
 #define ll long long
+// ASCII Uppercase 65-90
+// ASCII Lowercase 97-122
 
 int main()
 {
