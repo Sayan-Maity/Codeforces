@@ -20,7 +20,7 @@ int main()
         {
             if (a[i] == b[j])
                 cnt++;
-            else if (a[j] == b[i])
+            if (a[j] == b[i])
                 cnt++;
         }
     }
