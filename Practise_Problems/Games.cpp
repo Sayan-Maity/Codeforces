@@ -9,7 +9,7 @@ int main()
 
     int n, cnt = 0;
     cin >> n;
-    int a[n], b[n];
+    vector<int> a(n), b(n);
     for (int i = 0; i < n; i++)
     {
         cin >> a[i] >> b[i];
