@@ -8,15 +8,15 @@ int main()
 {
     int n, l, maxdist = -1;
     cin >> n >> l;
-    int arr[n];
-    for (int i = 0; i < n; ++i)
+    ll arr[n];
+    for (ll i = 0; i < n; ++i)
     {
         cin >> arr[i];
     }
     sort(arr, arr + n);
-    for (int i = 1; i < n; ++i)
+    for (ll i = 1; i < n; ++i)
     {
-        int x = arr[i] - arr[i - 1];
+        ll x = arr[i] - arr[i - 1];
         maxdist = max(x, maxdist);
     }
     long double mx2 = (long double)maxdist / 2;
