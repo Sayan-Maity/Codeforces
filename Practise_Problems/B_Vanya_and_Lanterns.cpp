@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    int n, l, maxdist = -1;
+    ll n, l, maxdist = -1;
     cin >> n >> l;
     ll arr[n];
     for (ll i = 0; i < n; ++i)
