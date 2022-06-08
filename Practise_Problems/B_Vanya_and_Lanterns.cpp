@@ -21,5 +21,5 @@ int main()
     }
     long double mx2 = (long double)maxdist / 2;
     long double mx1 = (long double)max(arr[0] - 0, l - arr[n - 1]);
-    (mx2 > mx1) ? cout << mx2 : cout << mx1;
+    (mx2 > mx1) ? cout << fixed << setprecision(12) << mx2 : cout << fixed << setprecision(12) << mx1;
 }
