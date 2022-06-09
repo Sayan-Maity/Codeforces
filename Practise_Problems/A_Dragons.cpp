@@ -27,6 +27,6 @@ int main()
                     s += a[i].second;
             }
         }
-        (c == 0) ? cout << "NO" : cout << "YES";
+        (c == 0) ? cout << "NO" << endl : cout << "YES" << endl;
     }
 }
