@@ -14,19 +14,19 @@ int main()
         for (int i = 0; i < n; i++)
         {
             cin >> a[i].first >> a[i].second;
-
-            sort(a, a + n);
-            for (int i = 0; i < n; i++)
-            {
-                if (s <= a[i].first)
-                {
-                    c = 0;
-                    break;
-                }
-                else
-                    s += a[i].second;
-            }
         }
+        sort(a, a + n);
+        for (int i = 0; i < n; i++)
+        {
+            if (s <= a[i].first)
+            {
+                c = 0;
+                break;
+            }
+            else
+                s += a[i].second;
+        }
+
         (c == 0) ? cout << "NO" << endl : cout << "YES" << endl;
     }
 }
