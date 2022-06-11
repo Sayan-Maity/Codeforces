@@ -7,12 +7,12 @@ int main()
 
     int n, m;
     cin >> n >> m;
-    if (n < m)
+    if (min(n, m) % 2 == 0)
     {
-        (n % 2 == 1) ? cout << "Akshat" : cout << "Malvika";
+        cout << "Malvika" << endl;
     }
     else
     {
-        (m % 2 == 1) ? cout << "Akshat" : cout << "Malvika";
+        cout << "Akshat" << endl;
     }
 }
