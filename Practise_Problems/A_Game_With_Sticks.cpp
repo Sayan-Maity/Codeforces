@@ -7,5 +7,5 @@ int main()
 
     int a, b;
     cin >> a >> b;
-    ((min(a, b)) % 2 == 0) ? cout << "Malvika" : cout << "Akshat ";
+    (a % 2 == 0 || b % 2 == 0 || (a % 2 == 0 && b % 2 == 0)) ? cout << "Malvika" : cout << "Akshat";
 }

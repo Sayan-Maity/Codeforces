@@ -8,6 +8,7 @@
     "initializer_list": "cpp",
     "type_traits": "cpp",
     "xtree": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "iostream": "cpp"
   }
 }
