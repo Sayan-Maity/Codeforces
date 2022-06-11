@@ -26,3 +26,36 @@ int main()
         }
     }
 }
+//
+//
+// This is simple solution
+//
+//
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+// upper = 65-90 || lower = 97-122 || (lower-upper) = 32
+
+int main()
+{
+    map<string, int> mp;
+    string s;
+    int n;
+    cin >> n;
+    while (n--)
+    {
+        cin >> s;
+        if (mp.count(s) == 0)
+        {
+            cout << "OK"
+                 << "\n";
+            mp[s]++;
+        }
+        else
+        {
+            cout << s << mp[s] << "\n";
+            mp[s]++;
+        }
+    }
+}
