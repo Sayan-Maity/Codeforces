@@ -7,43 +7,39 @@ using namespace std;
 int main()
 {
 
-    int t;
+    int i, k, a, b, t, z, count;
     cin >> t;
     while (t--)
     {
-        int a, b, cnt = 0;
         cin >> a >> b;
-        while (a != b)
+        if (a == b)
+            count = 0;
+        else if (a < b)
         {
-            if (b > a)
+            z = b - a;
+            if (z > 10)
             {
-                if (b - a >= 10)
-                {
-                    a += 10;
-                    cnt++;
-                }
-                else if (b - a < 10)
-                {
-                    a += (b - a);
-                    cnt++;
-                }
+                if (z % 10 == 0)
+                    count = z / 10;
+                else
+                    count = z / 10 + 1;
             }
-            else if (b < a)
-            {
-                if (a - b >= 10)
-                {
-                    a -= 10;
-                    cnt++;
-                }
-                else if (a - b < 10)
-                {
-                    a -= (a - b);
-                    cnt++;
-                }
-            }
-            else if (b == a)
-                cnt = 0;
+            else
+                count = 1;
         }
-        cout << cnt << "\n";
+        else
+        {
+            z = a - b;
+            if (z > 10)
+            {
+                if (z % 10 == 0)
+                    count = z / 10;
+                else
+                    count = z / 10 + 1;
+            }
+            else
+                count = 1;
+        }
+        cout << count << endl;
     }
 }
