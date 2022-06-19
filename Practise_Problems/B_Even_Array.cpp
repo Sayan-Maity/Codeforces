@@ -29,5 +29,6 @@ int main()
             }
         }
         (e == o) ? cout << e : cout << -1;
+        cout << "\n";
     }
 }
