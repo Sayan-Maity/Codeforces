@@ -12,7 +12,7 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n, cnt = 0, a = 0;
+        int n, cnt = 0, a = 0, s = 0;
         cin >> n;
         while (n > 0)
         {
@@ -20,13 +20,15 @@ int main()
             n /= 10;
             cnt++;
         }
-        if (cnt == 1)
-            cout << ((a - 1) * 10) + 1 << "\n";
-        else if (cnt == 2)
-            cout << ((a - 1) * 10) + 3 << "\n";
-        else if (cnt == 3)
-            cout << ((a - 1) * 10) + 6 << "\n";
-        else
-            cout << ((a - 1) * 10) + 10 << "\n";
+        // if(cnt==1) cout<<((a-1)*10)+1<<"\n";
+        // else if(cnt==2) cout<<((a-1)*10)+3<<"\n";
+        // else if(cnt==3) cout<<((a-1)*10)+6<<"\n";
+        // else cout<<((a-1)*10)+10<<"\n";
+        int res = (a - 1) * 10;
+        for (int i = 1; i <= cnt; i++)
+        {
+            s += i;
+        }
+        cout << res + s << "\n";
     }
 }
